@@ -71,7 +71,7 @@ Open your browser and visit:
 ```text
 http://127.0.0.1:5000
 ```
-
+https://online-coding-contest.onrender.com/
 ## 🌐 Live Demo
 
 Deployed on Render.
@@ -87,7 +87,7 @@ Deployed on Render.
 
 ## 👨‍💻 Author
 
-**Sanyasiraju Uppala**
+UPPALA VINAY
 
 B.Tech – Electronics and Communication Engineering
 
