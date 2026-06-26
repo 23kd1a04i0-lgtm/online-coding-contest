@@ -75,6 +75,12 @@ https://online-coding-contest.onrender.com/
 ## 🌐 Live Demo
 
 Deployed on Render.
+ PHOTOS OF THIS PROJECT 
+ <img width="1895" height="1007" alt="image" src="https://github.com/user-attachments/assets/9f0fcde4-d16d-42c5-96f6-bd73e34ed9cf" />
+<img width="797" height="625" alt="image" src="https://github.com/user-attachments/assets/9403db16-ab23-4108-b4e4-786ac0cbcd8f" />
+<img width="1902" height="857" alt="image" src="https://github.com/user-attachments/assets/6c2969c0-d9b8-4d19-ad6c-3d02565c390a" />
+<img width="1582" height="816" alt="image" src="https://github.com/user-attachments/assets/d0cc76fc-d8a0-41d9-8192-a0fb578f8fc7" />
+
 
 ## 📈 Future Enhancements
 
