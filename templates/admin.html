@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+
+    <style>
+
+        body{
+            font-family:Arial;
+            background:#f4f6f9;
+            padding:30px;
+        }
+
+        table{
+            border-collapse:collapse;
+            width:100%;
+            margin-bottom:40px;
+        }
+
+        table,th,td{
+            border:1px solid black;
+        }
+
+        th,td{
+            padding:10px;
+            text-align:center;
+        }
+
+        h1{
+            color:#2563eb;
+        }
+
+    </style>
+
+</head>
+
+<h2>⏰ Time Left: <span id="timer">30:00</span></h2>
+<body>
+
+<h1>👨‍💼 Admin Panel</h1>
+
+<h2>Registered Users</h2>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Username</th>
+<th>Email</th>
+</tr>
+
+{% for user in users %}
+
+<tr>
+
+<td>{{ user[0] }}</td>
+<td>{{ user[1] }}</td>
+<td>{{ user[2] }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+
+<h2>Leaderboard</h2>
+
+<table>
+
+<tr>
+<th>Rank</th>
+<th>Username</th>
+<th>Score</th>
+</tr>
+
+{% for row in scores %}
+
+<tr>
+
+<td>{{ loop.index }}</td>
+<td>{{ row[0] }}</td>
+<td>{{ row[1] }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br>
+
+<a href="/dashboard">
+    <button>Dashboard</button>
+</a>
+<script>
+let time = 30 * 60;
+
+let timer = setInterval(function () {
+
+    let minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+
+    document.getElementById("timer").innerHTML =
+        minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+
+    time--;
+
+    if (time < 0) {
+        clearInterval(timer);
+        alert("Time is up!");
+        document.forms[0].submit();
+    }
+
+}, 1000);
+</script>
+
+</body>
+</html>

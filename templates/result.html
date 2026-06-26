@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contest Result</title>
+
+    <style>
+        body{
+            font-family:Arial;
+            background:#f4f6f9;
+            text-align:center;
+            padding:50px;
+        }
+
+        .card{
+            background:white;
+            width:500px;
+            margin:auto;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            color:green;
+        }
+
+        .score{
+            font-size:35px;
+            color:#2563eb;
+            font-weight:bold;
+        }
+
+        a{
+            text-decoration:none;
+            background:#2563eb;
+            color:white;
+            padding:12px 20px;
+            border-radius:5px;
+            display:inline-block;
+            margin-top:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>🎉 Contest Submitted Successfully!</h1>
+
+<h2>Your Score</h2>
+
+<div class="score">
+{{ score }}/100
+</div>
+
+<br>
+
+<a href="/leaderboard">🏆 View Leaderboard</a>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submission History</title>
+
+    <style>
+        body{
+            font-family:Arial;
+            background:#f4f6f9;
+            padding:30px;
+        }
+
+        h1{
+            color:#2563eb;
+        }
+
+        table{
+            width:60%;
+            margin:auto;
+            border-collapse:collapse;
+            background:white;
+        }
+
+        table,th,td{
+            border:1px solid #ddd;
+        }
+
+        th{
+            background:#2563eb;
+            color:white;
+        }
+
+        th,td{
+            padding:12px;
+            text-align:center;
+        }
+
+        .buttons{
+            text-align:center;
+            margin-top:30px;
+        }
+
+        button{
+            background:#2563eb;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            border-radius:5px;
+            cursor:pointer;
+            margin:5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h1 align="center">📜 Submission History</h1>
+
+<table>
+
+<tr>
+    <th>Attempt</th>
+    <th>Score</th>
+</tr>
+
+{% for row in history %}
+
+<tr>
+    <td>{{ loop.index }}</td>
+    <td>{{ row[0] }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+<div class="buttons">
+
+<a href="/dashboard">
+    <button>Dashboard</button>
+</a>
+
+<a href="/leaderboard">
+    <button>Leaderboard</button>
+</a>
+
+<a href="/logout">
+    <button>Logout</button>
+</a>
+
+</div>
+
+</body>
+</html>
