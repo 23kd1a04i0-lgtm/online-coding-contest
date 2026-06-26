@@ -50,27 +50,25 @@ online-coding-contest/
 
 ## ⚙️ Installation
 
-```bash
+
 git clone https://github.com/YOUR_USERNAME/online-coding-contest.git
-```
 
-```bash
+
+
 cd online-coding-contest
-```
 
-```bash
+
 pip install -r requirements.txt
-```
 
-```bash
+
+
 python app.py
-```
+
 
 Open your browser and visit:
 
-```text
 http://127.0.0.1:5000
-```
+
 https://online-coding-contest.onrender.com/
 ## 🌐 Live Demo
 
